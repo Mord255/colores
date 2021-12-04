@@ -33,7 +33,7 @@ routes.get('/coloresx/xml',(req,res)=>{
                         $data = $data + "<id>" + element['id'] + "</id><br>";
                         $data = $data + "<name>" + element['name'] + "</name><br>";
                         $data = $data + "<color>" + element['color'] + "</color><br>";
-                        $data = $data + "<br>" ;
+                        // $data = $data + "<br>" ;
                         $data = $data + "</color>" ;
                     });
                     $data = $data + "</colors>" ;
