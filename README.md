@@ -61,7 +61,9 @@ Servicio de API REST el cual proporciona colores a su gusto, estos mismos estan 
 		https://colores25.herokuapp.com/api/colores/1
 - API/POST para crear un nuevo registro de color: requiere que envies los siguiente parametros por medio de un fomulaio en post(id,name,year,color,pantone_value)
 		https://colores25.herokuapp.com/api/colores
+
 ####Enlaces en XML:
+
 - API/GET para traer todos los colores:
 		https://colores25.herokuapp.com/api/coloresx/xml
 - API/GET para traer un color: como parametro pide el id del registro en la base de datos(1,2,3,4)
