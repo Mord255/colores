@@ -17,7 +17,39 @@ routes.get('/colores',(req,res)=>{
     })
 })//LISTO
 
+routes.get('/colores/xml',(req,res)=>{
+    req.getConnection((err,conn) => {
+        if (err) {
+            return res.send(err)
+        }else{
+            conn.query('SELECT id,name,color FROM colores' , (err,rows) => {
+                if (err) {
+                    return res.send(err)
+                }else{
+                    res.json(rows)
+                }
+            })
+        }
+    })
+})//LISTO
+
 routes.get('/colores/:id',(req,res)=>{
+    req.getConnection((err,conn) => {
+        if (err) {
+            return res.send(err)
+        }else{
+            conn.query('SELECT * FROM colores WHERE id = ? ' , [req.params.id] , (err,rows) => {
+                if (err) {
+                    return res.send(err)
+                }else{
+                    res.json(rows)
+                }
+            })
+        }
+    })
+})//LISTO
+
+routes.get('/colores/xml/:id',(req,res)=>{
     req.getConnection((err,conn) => {
         if (err) {
             return res.send(err)
