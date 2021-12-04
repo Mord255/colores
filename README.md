@@ -5,18 +5,26 @@ Servicio de API REST el cual proporciona colores a su gusto, estos mismos estan 
 ###Listado de las tecnologías o frameworks utilizados:
 
 ####Frameworks:
+
 - Node js
 - Express js
+
 ####Lenguajes de programacion:
+
 - JavaScript
 - SQL
+
 ####Programas:
+
 - Visual Studio Code
 - Postman
+
 ####Gestores de Bases de Datos y bases de datos:
+
 - MySQL
 
 ###Instalacion de Dependencias:
+
 1. **Node js:** instalacion normal como un programa promedio => link: https://nodejs.org/es/
 2. **Express js: **
 	Definicion: framework de JavaScript por el lado del servidor
@@ -46,6 +54,7 @@ Servicio de API REST el cual proporciona colores a su gusto, estos mismos estan 
 ###Enlaces de apis a utilizar:
 
 ####Enlaces en Json:
+
 - API/GET para traer todos los colores:
 		https://colores25.herokuapp.com/api/colores
 - API/GET para traer un color: como parametro pide el id del registro en la base de datos(1,2,3,4)
@@ -54,8 +63,8 @@ Servicio de API REST el cual proporciona colores a su gusto, estos mismos estan 
 		https://colores25.herokuapp.com/api/colores
 ####Enlaces en XML:
 - API/GET para traer todos los colores:
-		https://colores25.herokuapp.com/api/colores/xml
+		https://colores25.herokuapp.com/api/coloresx/xml
 - API/GET para traer un color: como parametro pide el id del registro en la base de datos(1,2,3,4)
-		https://colores25.herokuapp.com/api/colores/xml/1
+		https://colores25.herokuapp.com/api/coloresx/xml/1
 
 ###End
