@@ -15,7 +15,7 @@ routes.get('/colores',(req,res)=>{
             })
         }
     })
-})//LISTO
+})
 
 routes.get('/coloresx/xml',(req,res)=>{
     req.getConnection((err,conn) => {
@@ -26,14 +26,13 @@ routes.get('/coloresx/xml',(req,res)=>{
                 if (err) {
                     return res.send(err)
                 }else{
-                    // res.json(rows)
                     $data = `<?xml version="1.0" encoding="UTF-8"?><colors>` ;
                     rows.forEach(element => {
                         $data = $data + "<color>" ;
                         $data = $data + "<id>" + element['id'] + "</id><br>";
                         $data = $data + "<name>" + element['name'] + "</name><br>";
                         $data = $data + "<color>" + element['color'] + "</color><br>";
-                        // $data = $data + "<br>" ;
+                        $data = $data + "<br>" ;
                         $data = $data + "</color>" ;
                     });
                     $data = $data + "</colors>" ;
@@ -42,7 +41,7 @@ routes.get('/coloresx/xml',(req,res)=>{
             })
         }
     })
-})//LISTO
+})
 
 routes.get('/colores/:id',(req,res)=>{
     req.getConnection((err,conn) => {
@@ -58,7 +57,7 @@ routes.get('/colores/:id',(req,res)=>{
             })
         }
     })
-})//LISTO
+})
 
 routes.get('/coloresx/xml/:id',(req,res)=>{
     req.getConnection((err,conn) => {
@@ -69,7 +68,6 @@ routes.get('/coloresx/xml/:id',(req,res)=>{
                 if (err) {
                     return res.send(err)
                 }else{
-                    // res.json(rows)
                     $data = `<?xml version="1.0" encoding="UTF-8"?><colors>` ;
                     $data = $data + "<color>" ;
                     $data = $data + "<id>" + rows[0]['id'] + "</id><br>";
@@ -85,7 +83,7 @@ routes.get('/coloresx/xml/:id',(req,res)=>{
             })
         }
     })
-})//LISTO
+})
 
 routes.post('/crearColor',(req,res)=>{
     req.getConnection((err,conn) => {
@@ -101,6 +99,6 @@ routes.post('/crearColor',(req,res)=>{
             })
         }   
     })
-})//LISTO
+})
 
 module.exports = routes
