@@ -69,4 +69,18 @@ Servicio de API REST el cual proporciona colores a su gusto, estos mismos estan 
 - API/GET para traer un color: como parametro pide el id del registro en la base de datos(1,2,3,4)
 		https://colores25.herokuapp.com/api/coloresx/xml/1
 
+
+
+
+
+###Ejecucion del servidor:
+
+- Comando para ejecutar programa en local: npm start
+- En caso se haya generado algun error debera utilizar este comando: npm install ; posteriormente ejecutar el comando anterior
+
+#####Nota:
+####La base de datos esta alojada en un servidor externo alojado en el servicios de la pagina Always data, por lo tanto no sera necesario instalar nada con respecto a la base de datos, solo tener una conexion a internet, en caso no cuente con ello se estara adjuntando un archivo .sql con el codigo de la base de datos.
+
+Espero poder haber cumplido con las expectativas requeridas para el puesto, y poder formar parte de su equipo, muchas gracias
+
 ###End
